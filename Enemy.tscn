@@ -27,3 +27,10 @@ shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
+
+[node name="MoveLeft" type="Tween" parent="."]
+
+[node name="MoveRight" type="Tween" parent="."]
+
+[connection signal="tween_completed" from="MoveLeft" to="." method="_on_MoveLeft_tween_completed"]
+[connection signal="tween_completed" from="MoveRight" to="." method="_on_MoveRight_tween_completed"]
