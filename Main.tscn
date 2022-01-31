@@ -6,10 +6,10 @@
 
 [node name="Main" type="Node"]
 
-[node name="TileMap" parent="." instance=ExtResource( 3 )]
-
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 164, 181 )
 
 [node name="Enemy" parent="." instance=ExtResource( 1 )]
 position = Vector2( 725, 264 )
+
+[node name="TileMap" parent="." instance=ExtResource( 3 )]

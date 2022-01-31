@@ -15,7 +15,7 @@ animations = [ {
 } ]
 
 [node name="Enemy" type="KinematicBody2D"]
-position = Vector2( 47, 19 )
+position = Vector2( 57, 15 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -27,10 +27,3 @@ shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-
-[node name="MoveLeft" type="Tween" parent="."]
-
-[node name="MoveRight" type="Tween" parent="."]
-
-[connection signal="tween_completed" from="MoveLeft" to="." method="_on_MoveLeft_tween_completed"]
-[connection signal="tween_completed" from="MoveRight" to="." method="_on_MoveRight_tween_completed"]
